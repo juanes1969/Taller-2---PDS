@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-config
+  cloud:
+    config:
+      server:
+        git:
+          uri: file:///D:\Documents\PROYECTOS\config-data
+          default-label: main
+  security:
+    user:
+      name: ${CONFIG_USER}
+      password: ${CONFIG_PASSWORD}
+server:
+  port: 9000
